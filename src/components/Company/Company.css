@@ -1,0 +1,28 @@
+.company__content{
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    margin-bottom: 50px;
+}
+.company__title{
+    font-size: 28px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0px 2px 2px #5f5f5f;
+}
+.company__box{
+    padding: 0px 47px 0px 40px;
+}
+.company__img{
+    height: 400px;
+}
+.company__text{
+    font-size: 13px;
+    line-height: 1.6;
+    color: #999;
+}
+.company__str{
+    font-size: 13px;
+    color: #ffa500;
+}

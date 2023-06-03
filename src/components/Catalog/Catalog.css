@@ -1,0 +1,87 @@
+.catalog__title{
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-shadow: 0px 2px 2px #5f5f5f;
+    color: #fff;
+}
+.catalog__text{
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+    color: #999;
+}
+
+.repair__list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.repair__item{
+    position: relative;
+    width: 100%;
+    max-width: 330px;
+    border-radius: 20px;
+    background-color: #111;
+    transition: all .4s ease;
+    margin-bottom: 40px;
+}
+.repair__item:nth-child(2) .repair__title{
+    margin-bottom: 8px;
+}
+.repair__item::before{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url("../../../public/logo-rem.jpg");
+    top: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: '';
+}
+.repair__item:hover{
+    box-shadow: 0 2px 16px 3px #000;
+}
+
+.repair__img{
+    border-radius: 20px 20px 0px 0px;
+    height: 270px;
+}
+.repair__box{
+    width: 100%;
+    max-width: 290px;
+    padding: 10px 0px 30px 12px;
+}
+.repair__title{
+    font-weight: 600;
+    line-height: 1.4;
+    font-size: 20px;
+    color: #fff;
+    margin: 0px;
+    margin-bottom: 14px;
+}
+.repair__text{
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0px;
+    color: #999;
+    margin-bottom: 30px;
+}
+.repair__link{
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: all .2s ease;
+    background: repeating-linear-gradient(53deg, #c19036c5 0.7%, #ffa500 100%) #9e6805ac;
+    -webkit-box-shadow: 0px 12px 20px 0px #ffa500;
+    -moz-box-shadow: 0px 12px 20px 0px #ffa500;
+    box-shadow: 0px 3px 10px 0px #ffa500;
+}
+.repair__link:hover{
+    background: repeating-linear-gradient(264deg, #c19036c5 0.7%, #ffa500 100%) #9e6805ac;
+}

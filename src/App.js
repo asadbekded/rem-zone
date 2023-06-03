@@ -1,24 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import { useEffect, useState } from 'react';
+import { IoIosArrowUp } from 'react-icons/io';
 
 function App() {
+
+  const [backButton, setBackButton] = useState(false);
+
+  useEffect(() => {
+      window.addEventListener('scroll', () => {
+          if(window.scrollY > 700){
+              setBackButton(true)
+          }else{
+              setBackButton(false)
+          }
+      })
+  }, [setBackButton])
+
+  const scrollUp = () => {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      })
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes>
+
+      {
+        backButton && (
+            <button className='btn__top' onClick={scrollUp}>
+              <IoIosArrowUp color='#fff' size={30}/>
+            </button>
+        )
+      }
+    </>
   );
 }
 
