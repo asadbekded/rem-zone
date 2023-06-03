@@ -47,7 +47,7 @@
     transition: all .3s ease;
 }
 .header__phone:hover{
-    color: #41A5EE;
+    color: #FFC94F;
 }
 
 .header__link + .header__link{
