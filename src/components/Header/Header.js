@@ -1,10 +1,10 @@
 import './Header.css';
 import React, { useState } from 'react';
 import Remzona from '../../assets/images/remzona-logo.jpg';
-import Instagram from '../../assets/images/instagram.png';
-import Telegram from '../../assets/images/telegram.png';
-import Facebook from '../../assets/images/facebook.png';
-import Youtube from '../../assets/images/youtube.png';
+import Instagram from '../../assets/images/instagram.svg';
+import Telegram from '../../assets/images/telegram.svg';
+import Facebook from '../../assets/images/facebook.svg';
+import Youtube from '../../assets/images/youtube.svg';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
@@ -21,22 +21,22 @@ export default function Header() {
                     <Link className='nav__link' to={'/'}>Главная</Link>
                 </li>
                 <li className='nav__item' >
-                    <Link className='nav__link' to={'company'}>O компании</Link>
+                    <Link className='nav__link' to={'/'}>O компании</Link>
                 </li>
                 <li className='nav__item' >
-                    <Link className='nav__link' to={'/catalog'}>Каталог услуг</Link>
+                    <Link className='nav__link' to={'/'}>Каталог услуг</Link>
                 </li>
                 <li className='nav__item' >
-                    <Link className='nav__link' to={'/news'}>Новости</Link>
+                    <Link className='nav__link' to={'/'}>Новости</Link>
                 </li>
                 <li className='nav__item' >
-                    <Link className='nav__link' to={'/about'} >Отзывы o нас</Link>
+                    <Link className='nav__link' to={'/'} >Отзывы o нас</Link>
                 </li>
                 <li className='nav__item' >
-                    <Link className='nav__link' to={'/price'}>Наш прайс-лист</Link>
+                    <Link className='nav__link' to={'/'}>Наш прайс-лист</Link>
                 </li>
                 <li className='nav__item' >
-                    <Link className='nav__link' to={'/address'}>Наш адрес</Link>
+                    <Link className='nav__link' to={'/'}>Наш адрес</Link>
                 </li>
             </ul>
         </nav>
@@ -54,8 +54,10 @@ export default function Header() {
         </div>
         <div className='header'>
             <div className='header__link-box'>
-                <a className='header__link' href="https://www.instagram.com/"><img className='header__link-img hero__link-img' src={Instagram} alt="instagram logo" width={45} height={40}/></a>
-                <a className='header__link' href="https://www.facebook.com/"><img className='header__link-img' src={Facebook} alt="facebook logo" width={40} height={40}/></a>
+                <a className='header__link' href="https://www.instagram.com/"><img className='header__link-img' src={Instagram} alt="instagram logo" width={40} height={40}/></a>
+                <a className='header__link' href="https://www.facebook.com/">
+                    <img className='header__link-img' src={Facebook} alt="facebook logo" width={40} height={40}/>
+                </a>
                 <a className='header__link' href="https://www.youtube.com/"><img className='header__link-img' src={Youtube} alt="youtube logo" width={40} height={40}/></a>
                 <a className='header__link' href="https://web.telegram.org/a/"><img className='header__link-img' src={Telegram} alt="telegram logo" width={40} height={40}/></a>
             </div>

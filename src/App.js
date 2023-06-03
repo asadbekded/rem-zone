@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import { useEffect, useState } from 'react';
 import { IoIosArrowUp } from 'react-icons/io';
+import Error from './pages/Error/Error';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="*" element={<Error/>} />
       </Routes>
 
       {
