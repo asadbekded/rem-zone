@@ -17,11 +17,11 @@ export default function Footer() {
         <p className='footer__text'>REMZONA || Надежный ремонт бытовой техники</p>
 
         <div>
-            <a className='footer__link' href="https://www.instagram.com/"><img src={Instagram} alt="instagram logo" 
+            <a className='footer__link' href="https://www.instagram.com/"><img className='footer__link-img hero__link-img' src={Instagram} alt="instagram logo" 
             width={45} height={40}/></a>
-            <a className='footer__link' href="https://www.facebook.com/"><img src={Facebook} alt="facebook logo" width={40}height={40}/></a>
-            <a className='footer__link' href="https://www.youtube.com/"><img src={Youtube} alt="youtube logo" width={40}height={40}/></a>
-            <a className='footer__link' href="https://web.telegram.org/a/"><img src={Telegram} alt="telegram logo" width={40} height={40}/></a>
+            <a className='footer__link' href="https://www.facebook.com/"><img className='footer__link-img' src={Facebook} alt="facebook logo" width={40}height={40}/></a>
+            <a className='footer__link' href="https://www.youtube.com/"><img className='footer__link-img' src={Youtube} alt="youtube logo" width={40}height={40}/></a>
+            <a className='footer__link' href="https://web.telegram.org/a/"><img className='footer__link-img' src={Telegram} alt="telegram logo" width={40} height={40}/></a>
         </div>
     </div>
   )

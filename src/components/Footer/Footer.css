@@ -14,3 +14,25 @@
     font-weight: 500;
     color: #ffa500;
 }
+
+@media only screen and (max-width: 820px){
+    .footer__content{
+        display: block;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 460px){
+    .footer__link-img{
+        width: 30px;
+        height: 30px;
+    }
+    .hero__link-img{
+        width: 34px;
+    }
+    .footer__text{
+        font-size: 14px;
+        line-height: 1.7em;
+        font-weight: 500;
+        color: #ffa500;
+    }
+}

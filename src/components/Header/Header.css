@@ -10,6 +10,7 @@
     justify-content: space-between;
     padding: 0px;
     margin: 0px;
+    list-style: none;
 }
 .nav__link{
     transition: all .3s ease;
@@ -50,4 +51,189 @@
 }
 .header__link + .header__link{
     margin-left: 15px;
+}
+
+@media only screen and (max-width: 875px){
+    .header__phone-box::before{
+        left: -50px;
+    }
+}
+
+@media only screen and (max-width: 835px){
+    .header{
+        display: block;
+        text-align: center;
+    }
+    .header__link-box{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .header__logo{
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 0px auto;
+    }
+    .header__phone-box{
+        display: inline-block;
+        width: 100%;
+        max-width: 200px;
+        margin-top: 30px;
+        margin-left: 55px;
+    }
+    .header__img{
+        width: 400px;
+    }
+    .header__phone-box::before{
+        left: -35px;
+    }
+}
+
+.burger__header{
+    display: none;
+}
+
+.menu-btn{
+    display: none;
+}
+
+
+@media only screen and (max-width: 750px){
+    .nav{
+        display: none;
+    }
+    .header__logo{
+        display: none;
+    }
+    .burger__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        margin-bottom: 30px;
+    }
+    .burger__logo{
+        width: 100%;
+        max-width: 250px;
+    }
+    .burger__img{
+        width: 250px;
+    }
+    
+    /* burger btn start  */
+    .menu-btn {
+        display: inline-block;
+        height: 30px;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        width: 30px;
+        background-color: transparent;
+        margin-left: auto;
+    }
+    .menu-btn .bar:nth-of-type(2) {
+        top: calc(50% - 9px);
+    }
+    .menu-btn .bar:nth-of-type(3) {
+        top: calc(50% + 9px);
+    }
+    .menu-btn .bar {
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+        background-color: #FFC94F;
+        transition: all 0.3s ease-in-out;
+    } 
+    .menu-btn.active .bar:nth-of-type(1) {
+        display: none;
+        background-color: white;
+    }
+    .menu-btn.active .bar:nth-of-type(2) {
+        top: 50%;
+        background-color: #FFC94F;
+        transform: translate(-50%, 0%) rotate(45deg);
+    }
+    .menu-btn.active .bar:nth-of-type(3) {
+        top: 50%;
+        background-color: #FFC94F;
+        transform: translate(-50%, 0%) rotate(-45deg);
+    }
+    /* burger btn end  */
+    
+    
+    /* open navbar */
+    body{
+        position: relative;
+    }
+    .open__nav{
+        position: absolute;
+        margin-left: 0px;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        padding: 60px 50px;
+        text-align: center;
+        top: 80px;
+        right: 0px;
+        /* display: block; */
+        display: table-cell!important;
+        vertical-align: middle;
+        background-color: #0D1015;
+        transition: all .5s;
+        z-index: 10;
+    }
+    .open__nav body {
+        overflow: hidden;
+    }
+
+    .nav__list{
+        display: block;
+        padding: 0px;
+    }
+    .nav__item{
+        margin-bottom: 30px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 460px){
+    .burger__logo{
+        width: 100%;
+        max-width: 200px;
+    }
+    .burger__img{
+        width: 200px;
+    }
+    .header__phone{
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+        transition: all .3s ease;
+    }
+    .header__phone-box::before{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-image: url("../../assets/images/telephone.png");
+        top: -6px;
+        left: -20px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        content: '';
+    }
+    .header__link-img{
+        width: 30px;
+        height: 30px;
+    }
+    .hero__link-img{
+        width: 34px;
+    }
+    .header__phone-box{
+        margin-top: 10px;
+    }
 }

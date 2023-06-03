@@ -19,6 +19,8 @@
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0px;
+    list-style: none;
     margin-top: 70px;
 }
 .repair__item{
@@ -84,4 +86,59 @@
 }
 .repair__link:hover{
     background: repeating-linear-gradient(264deg, #c19036c5 0.7%, #ffa500 100%) #9e6805ac;
+}
+
+@media only screen and (max-width: 730px) {
+    .catalog__title{
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    .catalog__text{
+        font-size: 14px;
+        text-align: center;
+        margin: 0px;
+        color: #999;
+    }
+    .repair__list{
+        display: block;
+        padding: 0px;
+        list-style: none;
+        margin-top: 50px;
+    }
+    .repair__item{
+        margin: 0px auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .catalog__title{
+        font-size: 23px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .catalog__text{
+        font-size: 13px;
+    }
+    .repair__list{
+        margin-top: 40px;
+    }
+    .repair__title{
+        font-weight: 600;
+        line-height: 1.4;
+        font-size: 18px;
+        color: #fff;
+        margin: 0px;
+        margin-bottom: 14px;
+    }
+    .repair__text{
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0px;
+        color: #999;
+        margin-bottom: 30px;
+    }
+    .repair__link{
+        font-size: 16px;
+    }
 }
