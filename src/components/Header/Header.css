@@ -92,8 +92,6 @@
 .menu-btn{
     display: none;
 }
-
-
 @media only screen and (max-width: 750px){
     .nav{
         display: none;
@@ -175,9 +173,7 @@
         text-align: center;
         top: 80px;
         right: 0px;
-        /* display: block; */
-        display: table-cell!important;
-        vertical-align: middle;
+        display: block;
         background-color: #0D1015;
         transition: all .5s;
         z-index: 10;
